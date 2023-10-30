@@ -1,0 +1,31 @@
+mac@macnoMBP ~ % mkdir git_challenge
+mac@macnoMBP ~ % cd git_challenge
+mac@macnoMBP git_challenge % git init
+Initialized empty Git repository in /Users/mac/git_challenge/.git/
+mac@macnoMBP git_challenge % git add .
+mac@macnoMBP git_challenge % git add hello_world.txt
+mac@macnoMBP git_challenge % git commit -m"hello_world.txtを追加"
+[main (root-commit) 6395012] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+mac@macnoMBP git_challenge % git add .
+mac@macnoMBP git_challenge % git commit -m "日本語訳を追加"
+[main e9a3eb5] 日本語訳を追加
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+ create mode 100644 .DS_Store
+mac@macnoMBP git_challenge % git status
+On branch main
+nothing to commit, working tree clean
+mac@macnoMBP git_challenge % git log
+commit e9a3eb5bcd94027c308e88903771777d3765ae1e (HEAD -> main)
+Author: MakikoOhashi <makiron19831014@gmail.com>
+Date:   Mon Oct 30 11:46:37 2023 +0900
+
+    日本語訳を追加
+
+commit 639501208649edb05f5da0b5ca3c3beaa8a55bfe
+Author: MakikoOhashi <makiron19831014@gmail.com>
+Date:   Mon Oct 30 11:44:08 2023 +0900
+
+    hello_world.txtを追加
+mac@macnoMBP git_challenge % 
